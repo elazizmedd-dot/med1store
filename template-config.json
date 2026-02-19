@@ -1,0 +1,192 @@
+{
+  "templateName": "Arabic E-commerce Landing Page",
+  "version": "1.0.0",
+  "description": "Complete Arabic RTL landing page with product gallery, order form, and Google Sheets integration",
+  "language": "ar",
+  "direction": "rtl",
+  "features": [
+    "Responsive design",
+    "Arabic RTL support",
+    "Product image gallery with checkout buttons",
+    "Size and color selection",
+    "Multiple offer packages with discounts",
+    "Price calculator with discount display",
+    "Google Sheets integration for orders",
+    "Email notifications",
+    "WhatsApp floating button with help bubble",
+    "Order confirmation modal",
+    "FAQ section with accordion",
+    "Features section with icons",
+    "Custom header image support"
+  ],
+  "configuration": {
+    "pricing": {
+      "basePrice": 229,
+      "oldPrice": 299,
+      "currency": "درهم",
+      "offers": [
+        {
+          "quantity": 1,
+          "discount": 0,
+          "label": "قطعة واحدة"
+        },
+        {
+          "quantity": 2,
+          "discount": 10,
+          "label": "قطعتين",
+          "badge": "الأكثر مبيعاً"
+        },
+        {
+          "quantity": 3,
+          "discount": 10,
+          "label": "3 قطع",
+          "badge": "أفضل عرض"
+        }
+      ]
+    },
+    "productOptions": {
+      "sizes": ["M", "L", "XL", "2XL", "3XL"],
+      "colors": [
+        {
+          "name": "noir",
+          "label": "Noir (أسود)",
+          "hex": "#000000"
+        },
+        {
+          "name": "blanc cassé",
+          "label": "Blanc cassé (أبيض مكسور)",
+          "hex": "#F5F5DC"
+        },
+        {
+          "name": "blue roi",
+          "label": "Blue roi (أزرق ملكي)",
+          "hex": "#4169E1"
+        },
+        {
+          "name": "marron",
+          "label": "Marron (بني)",
+          "hex": "#8B4513"
+        },
+        {
+          "name": "bordoux",
+          "label": "Bordoux (عنابي)",
+          "hex": "#800020"
+        }
+      ]
+    },
+    "contact": {
+      "whatsappNumber": "212611103265",
+      "whatsappMessage": "هل تحتاج مساعدة؟"
+    },
+    "googleSheets": {
+      "scriptUrl": "YOUR_GOOGLE_SCRIPT_URL_HERE",
+      "emailNotification": "your-email@gmail.com"
+    },
+    "images": {
+      "header": "https://via.placeholder.com/1200x300",
+      "productGallery": [
+        "https://i.ibb.co/HDXM7008/MEDSTORE.png",
+        "https://i.ibb.co/00NBLQs/generated-image.jpg",
+        "https://i.ibb.co/xR1x2g8/generated-image-1.png"
+      ],
+      "offerImages": [
+        "https://i.ibb.co/ynXPfcGY/1767966905-1000535295-removebg-preview.png",
+        "https://i.ibb.co/ccrybQqg/Untitled-2.png",
+        "https://i.ibb.co/PKQ6yTq/jj.png"
+      ],
+      "featureIcons": [
+        "https://cdn-icons-png.flaticon.com/128/190/190411.png",
+        "https://cdn-icons-png.flaticon.com/128/411/411763.png",
+        "https://cdn-icons-png.flaticon.com/128/2331/2331966.png"
+      ]
+    },
+    "content": {
+      "pageTitle": "منتجنا المميز",
+      "features": [
+        {
+          "title": "جودة عالية",
+          "description": "منتج مصنوع من أفضل المواد"
+        },
+        {
+          "title": "توصيل سريع",
+          "description": "نوصل لك في 24-48 ساعة"
+        },
+        {
+          "title": "دفع عند الاستلام",
+          "description": "ادفع فقط عند استلام المنتج"
+        }
+      ],
+      "faq": [
+        {
+          "question": "كم تستغرق مدة التوصيل؟",
+          "answer": "عادة تتراوح مدة توصيل المنتج ما بين 24 و48 ساعة."
+        },
+        {
+          "question": "هل الدفع عند الاستلام متاح؟",
+          "answer": "نعم، لن تدفع شيئًا حتى تستلم المنتج وتقوم بمعاينته بنفسك."
+        },
+        {
+          "question": "هل يوجد ضمان على المنتج؟",
+          "answer": "نعم، نوفر لجميع زبنائنا ضمانًا لمدة 30 يومًا على المنتج."
+        },
+        {
+          "question": "هل يمكنني إرجاع المنتج؟",
+          "answer": "نعم، يمكنك إرجاع المنتج إذا لم يعجبك بشرط عدم إتلاف محتوياته."
+        },
+        {
+          "question": "كيف يمكنني التواصل معكم؟",
+          "answer": "يمكنك التواصل معنا عبر الواتساب أو على حساباتنا في مواقع التواصل الاجتماعي."
+        }
+      ],
+      "formLabels": {
+        "sizeLabel": "اختر المقاس:",
+        "colorLabel": "اختر اللون:",
+        "offerLabel": "اختر العرض:",
+        "fullNameLabel": "الاسم الكامل:",
+        "phoneLabel": "رقم الهاتف:",
+        "cityLabel": "المدينة:",
+        "addressLabel": "العنوان:",
+        "commentsLabel": "ملاحظات (اختياري):",
+        "submitButton": "إرسال الطلب"
+      }
+    }
+  },
+  "files": [
+    "index.html",
+    "style.css",
+    "script.js"
+  ],
+  "setup": {
+    "steps": [
+      "1. Replace 'YOUR_GOOGLE_SCRIPT_URL_HERE' in script.js with your Google Apps Script URL",
+      "2. Update WhatsApp number in index.html (search for 'wa.me/')",
+      "3. Replace placeholder images with your actual product images",
+      "4. Update header image URL in index.html",
+      "5. Customize colors in style.css if needed",
+      "6. Set up Google Apps Script for order collection (see googleSheetScript.txt)",
+      "7. Configure email notifications in Google Apps Script"
+    ],
+    "googleSheetScript": "See the Google Apps Script code in the documentation for handling form submissions and sending email notifications"
+  },
+  "customization": {
+    "colors": {
+      "primary": "#667eea",
+      "secondary": "#764ba2",
+      "success": "#28a745",
+      "warning": "#ffc107",
+      "danger": "#dc3545",
+      "whatsapp": "#25D366"
+    },
+    "fonts": {
+      "main": "'Segoe UI', Tahoma, Geneva, Verdana, sans-serif"
+    }
+  },
+  "dependencies": {
+    "external": [
+      "Google Sheets API (via Apps Script)",
+      "Flaticon (for feature icons)",
+      "ImgBB (for image hosting)"
+    ],
+    "none": "No npm packages or frameworks required - pure HTML, CSS, and JavaScript"
+  }
+}

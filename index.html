@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RAMADAN ABAYA</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header with Image -->
+    <header class="header">
+        <img src="https://i.ibb.co/9kthrYD5/image.png" alt="Header Image" class="header-image">
+    </header>
+
+<section class="gallery">
+        <div class="container">
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="https://i.ibb.co/HDXM7008/MEDSTORE.png" alt="صورة المنتج 1">
+                    <button class="checkout-button">اطلب الآن</button>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://i.ibb.co/00NBLQs/generated-image.jpg" alt="صورة المنتج 2">
+                    <button class="checkout-button">اطلب الآن</button>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://i.ibb.co/xR1x2g8/generated-image-1.png" alt="صورة المنتج 3">
+                    <button class="checkout-button">اطلب الآن</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="container">
+            <h2 class="section-title">مميزات المنتج</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <img src="https://cdn-icons-png.flaticon.com/128/190/190411.png" alt="quality icon">
+                    </div>
+                    <h3>جودة عالية</h3>
+                    <p>توب : كريب روزا 150 في الكراماج</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <img src="https://cdn-icons-png.flaticon.com/128/411/411763.png" alt="delivery icon">
+                    </div>
+                    <h3>توصيل سريع</h3>
+                    <p>توصل لك في 24-48 ساعة</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <img src="https://cdn-icons-png.flaticon.com/128/2331/2331966.png" alt="payment icon">
+                    </div>
+                    <h3>دفع عند الاستلام</h3>
+                    <p>ادفع فقط عند استلام المنتج</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="faq">
+        <div class="container">
+            <h2 class="section-title">أسئلة شائعة حول المنتج</h2>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>كم تستغرق مدة التوصيل؟</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>عادة تتراوح مدة توصيل المنتج ما بين 24 و48 ساعة.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>هل الدفع عند الاستلام متاح؟</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>نعم، لن تدفع شيئًا حتى تستلم المنتج وتقوم بمعاينته بنفسك.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>كيف يمكنني التواصل معكم؟</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>يمكنك التواصل معنا عبر الواتساب أو على حساباتنا في مواقع التواصل الاجتماعي.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="container">
+            <h2>جاهز للطلب؟</h2>
+            <p>اطلب الآن واحصل على توصيل سريع - دفع عند الاستلام</p>
+        </div>
+    </section>
+
+    <!-- Order Form Section -->
+    <section class="order-form-section">
+        <div class="container">
+            <h2 class="section-title">أكمل طلبك</h2>
+            <form id="orderForm" class="order-form">
+                <!-- Size Selection -->
+                <div class="form-group">
+                    <label>اختر المقاس:</label>
+                    <div class="size-buttons">
+                        <button type="button" class="size-btn" data-size="M">M</button>
+                        <button type="button" class="size-btn" data-size="L">L</button>
+                        <button type="button" class="size-btn" data-size="XL">XL</button>
+                        <button type="button" class="size-btn" data-size="2XL">2XL</button>
+                        <button type="button" class="size-btn" data-size="3XL">3XL</button>
+                    </div>
+                    <input type="hidden" id="selectedSize" name="size" required>
+                </div>
+
+                <!-- Color Selection -->
+                <div class="form-group">
+                    <label>اختر اللون:</label>
+                    <div class="color-buttons">
+                        <button type="button" class="color-btn" data-color="noir" style="background-color: #000000;" title="Noir (أسود)"></button>
+                        <button type="button" class="color-btn" data-color="blanc cassé" style="background-color: #F5F5DC;" title="Blanc cassé (أبيض مكسور)"></button>
+                        <button type="button" class="color-btn" data-color="blue roi" style="background-color: #4169E1;" title="Blue roi (أزرق ملكي)"></button>
+                        <button type="button" class="color-btn" data-color="marron" style="background-color: #8B4513;" title="Marron (بني)"></button>
+                        <button type="button" class="color-btn" data-color="bordoux" style="background-color: #800020;" title="Bordoux (عنابي)"></button>
+                    </div>
+                    <input type="hidden" id="selectedColor" name="color" required>
+                </div>
+
+                <!-- Quantity -->
+                <div class="form-group">
+                    <label>اختر العرض:</label>
+                    <div class="offer-buttons">
+                        <button type="button" class="offer-btn" data-quantity="1" data-discount="0">
+                            <img src="https://i.ibb.co/ynXPfcGY/1767966905-1000535295-removebg-preview.png" alt="قطعة واحدة" class="offer-image">
+                            <div class="offer-content">
+                                <div class="offer-title">قطعة واحدة</div>
+                                <div class="offer-price">229 درهم</div>
+                            </div>
+                        </button>
+                        <button type="button" class="offer-btn popular" data-quantity="2" data-discount="10">
+                            <div class="offer-badge">الأكثر مبيعاً</div>
+                            <img src="https://i.ibb.co/ccrybQqg/Untitled-2.png" alt="قطعتين" class="offer-image">
+                            <div class="offer-content">
+                                <div class="offer-title">قطعتين</div>
+                                <div class="offer-discount">خصم 10%</div>
+                                <div class="offer-price">412.2 درهم</div>
+                                <div class="offer-save">وفر 45.8 درهم</div>
+                            </div>
+                        </button>
+                        <button type="button" class="offer-btn best-deal" data-quantity="3" data-discount="10">
+                            <div class="offer-badge">أفضل عرض</div>
+                            <img src="https://i.ibb.co/PKQ6yTq/jj.png" alt="3 قطع" class="offer-image">
+                            <div class="offer-content">
+                                <div class="offer-title">3 قطع</div>
+                                <div class="offer-discount">خصم 10%</div>
+                                <div class="offer-price">618.3 درهم</div>
+                                <div class="offer-save">وفر 68.7 درهم</div>
+                            </div>
+                        </button>
+                    </div>
+                    <input type="hidden" id="quantity" name="quantity" value="1" required>
+                    <input type="hidden" id="discountRate" name="discountRate" value="0">
+                </div>
+
+                <!-- Price Display -->
+                <div class="price-display">
+                    <div class="price-row old-price">
+                        <span>السعر القديم:</span>
+                        <span id="oldPrice">299.00 درهم</span>
+                    </div>
+                    <div class="price-row current">
+                        <span>السعر الحالي:</span>
+                        <span id="currentPrice">229.00 درهم</span>
+                    </div>
+                    <div class="price-row discount" style="display: none;">
+                        <span>الخصم (10%):</span>
+                        <span id="discountAmount">-22.9 درهم</span>
+                    </div>
+                    <div class="price-row total">
+                        <span>المجموع النهائي:</span>
+                        <span id="finalPrice">229.00 درهم</span>
+                    </div>
+                </div>
+
+                <!-- Full Name -->
+                <div class="form-group">
+                    <label for="fullName">الاسم الكامل:</label>
+                    <input type="text" id="fullName" name="fullName" required>
+                </div>
+
+                <!-- Phone -->
+                <div class="form-group">
+                    <label for="phone">رقم الهاتف:</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+
+                <!-- City -->
+                <div class="form-group">
+                    <label for="city">المدينة:</label>
+                    <input type="text" id="city" name="city" required>
+                </div>
+
+                <!-- Address -->
+                <div class="form-group">
+                    <label for="address">العنوان:</label>
+                    <textarea id="address" name="address" rows="3" required></textarea>
+                </div>
+
+                <!-- Comments -->
+                <div class="form-group">
+                    <label for="comments">ملاحظات (اختياري):</label>
+                    <textarea id="comments" name="comments" rows="3" placeholder="أي ملاحظات إضافية..."></textarea>
+                </div>
+
+                <!-- Submit Button -->
+                <button type="submit" class="submit-button">إرسال الطلب</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 جميع الحقوق محفوظة</p>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/212611103265" class="whatsapp-button" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/128/733/733585.png" alt="WhatsApp">
+    </a>
+    <div class="whatsapp-bubble">هل تحتاج مساعدة؟</div>
+
+    <!-- Confirmation Modal -->
+    <div id="confirmationModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-icon">✓</div>
+            <h2>تم إرسال طلبك بنجاح!</h2>
+            <p>شكراً لك على طلبك. سنتواصل معك قريباً على رقم الهاتف المسجل.</p>
+            <div class="order-summary" id="orderSummary"></div>
+            <button class="modal-button" onclick="closeModal()">حسناً</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
